@@ -1,0 +1,13 @@
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.csprojAssemblyReference.cache
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.Form1.resources
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.Properties.Resources.resources
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.csproj.GenerateResource.cache
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.csproj.CoreCompileInputs.cache
+F:\Winform\Bai2\Bai2\bin\Debug\Bai2.exe.config
+F:\Winform\Bai2\Bai2\bin\Debug\Bai2.exe
+F:\Winform\Bai2\Bai2\bin\Debug\Bai2.pdb
+F:\Winform\Bai2\Bai2\bin\Debug\MySql.Data.dll
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.csproj.CopyComplete
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.exe
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.pdb
+F:\Winform\Bai2\Bai2\obj\Debug\Bai2.tacgia.resources
