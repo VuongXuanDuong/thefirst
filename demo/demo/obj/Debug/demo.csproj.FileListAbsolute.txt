@@ -1,0 +1,15 @@
+F:\Winform\demo\demo\obj\Debug\demo.csprojAssemblyReference.cache
+F:\Winform\demo\demo\obj\Debug\demo.Properties.Resources.resources
+F:\Winform\demo\demo\obj\Debug\demo.VIEW.Form1.resources
+F:\Winform\demo\demo\obj\Debug\demo.csproj.GenerateResource.cache
+F:\Winform\demo\demo\obj\Debug\demo.csproj.CoreCompileInputs.cache
+F:\Winform\demo\demo\bin\Debug\demo.exe.config
+F:\Winform\demo\demo\bin\Debug\demo.exe
+F:\Winform\demo\demo\bin\Debug\demo.pdb
+F:\Winform\demo\demo\bin\Debug\Microsoft.Azure.Management.Sql.dll
+F:\Winform\demo\demo\bin\Debug\Hyak.Common.dll
+F:\Winform\demo\demo\bin\Debug\Microsoft.Azure.Common.dll
+F:\Winform\demo\demo\bin\Debug\Newtonsoft.Json.dll
+F:\Winform\demo\demo\obj\Debug\demo.csproj.CopyComplete
+F:\Winform\demo\demo\obj\Debug\demo.exe
+F:\Winform\demo\demo\obj\Debug\demo.pdb
