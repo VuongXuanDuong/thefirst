@@ -54,6 +54,13 @@ namespace demo.MODEL
             cmd.ExecuteNonQuery();
             connection.Close();
         }
+        public void Update ( String id, String tensach, String tacgia, String namxuatban)
+        {
+            cmd = new SqlCommand("UPDATE book SET id='" + id + "',tensach='" + tensach + "',tacgia='" + tacgia + "',namxuatban='" + namxuatban + "' ",connection);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            connection.Close();
 
+        }
     }
 }

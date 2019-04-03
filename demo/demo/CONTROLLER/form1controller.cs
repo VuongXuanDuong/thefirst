@@ -22,5 +22,9 @@ namespace demo.CONTROLLER
         {
             form1.Delete(id);
         }
+        public void Update(String id, String tensach, String tacgia, String namxuatban)
+        {
+            form1.Update(id, tensach, tacgia, namxuatban);
+        }
     }
 }

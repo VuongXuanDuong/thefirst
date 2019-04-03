@@ -59,5 +59,12 @@ namespace demo.VIEW
             Form1_Load(sender, e);
             clear();
         }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            form1.Update(tbxid.Text, tbxtensach.Text, tbxtacgia.Text, tbxnamxuatban.Text);
+            Form1_Load(sender, e);
+            clear();
+        }
     }
 }
