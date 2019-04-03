@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using demo.MODEL;
-//using demo.CONTROLLER;
+//using demo.MODEL;
+using demo.CONTROLLER;
 
 
 
@@ -20,22 +20,44 @@ namespace demo.VIEW
         {
             InitializeComponent();
         }
-
-        form1model form1 = new form1model();
         public void clear()
         {
+            tbxid.Text = "";
             tbxtensach.Text = "";
             tbxtacgia.Text = "";
             tbxnamxuatban.Text = "";
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void danhsach_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            dataGridView1.DataSource = form1.Display();
+            tbxid.Text = danhsach.Rows[e.RowIndex].Cells[0].Value.ToString();
+            tbxtensach.Text = danhsach.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tbxtacgia.Text = danhsach.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tbxnamxuatban.Text = danhsach.Rows[e.RowIndex].Cells[3].Value.ToString();
+
         }
 
-        private void btninstall_Click(object sender, EventArgs e)
+
+        form1controller form1 = new form1controller();
+        private void Form1_Load(object sender, EventArgs e)
         {
-          //  dataGridView1.DataSource = form1.install();
+            danhsach.DataSource = form1.Display();
+        }
+
+        private void btxinsert_Click(object sender, EventArgs e)
+        {
+            form1.Insert(tbxid.Text, tbxtensach.Text, tbxtacgia.Text, tbxnamxuatban.Text);
+            Form1_Load(sender, e);
+            clear();
+
+        }
+
+        
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            form1.Delete(tbxid.Text);
+            Form1_Load(sender, e);
+            clear();
         }
     }
 }

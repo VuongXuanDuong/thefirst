@@ -50,7 +50,6 @@
   <ItemGroup>
     <Compile Include="CONTROLLER\form1controller.cs" />
     <Compile Include="MODEL\form1model.cs" />
-    <Compile Include="MODEL\xuly.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VIEW\Form1.cs">
