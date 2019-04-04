@@ -1,0 +1,15 @@
+F:\thefirst\demo\demo\bin\Debug\demo.exe.config
+F:\thefirst\demo\demo\bin\Debug\demo.exe
+F:\thefirst\demo\demo\bin\Debug\demo.pdb
+F:\thefirst\demo\demo\bin\Debug\Microsoft.Azure.Management.Sql.dll
+F:\thefirst\demo\demo\bin\Debug\Hyak.Common.dll
+F:\thefirst\demo\demo\bin\Debug\Microsoft.Azure.Common.dll
+F:\thefirst\demo\demo\bin\Debug\Newtonsoft.Json.dll
+F:\thefirst\demo\demo\obj\Debug\demo1.csprojAssemblyReference.cache
+F:\thefirst\demo\demo\obj\Debug\demo.Properties.Resources.resources
+F:\thefirst\demo\demo\obj\Debug\demo.VIEW.Form1.resources
+F:\thefirst\demo\demo\obj\Debug\demo1.csproj.GenerateResource.cache
+F:\thefirst\demo\demo\obj\Debug\demo1.csproj.CoreCompileInputs.cache
+F:\thefirst\demo\demo\obj\Debug\demo1.csproj.CopyComplete
+F:\thefirst\demo\demo\obj\Debug\demo.exe
+F:\thefirst\demo\demo\obj\Debug\demo.pdb
