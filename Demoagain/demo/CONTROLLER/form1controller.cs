@@ -32,6 +32,13 @@ namespace demo.CONTROLLER
             cmd.ExecuteNonQuery();
             connection.Close();
         }
+        public void Update(book book)
+        {
+            cmd = new SqlCommand("UPDATE book SET tensach='" + book.tensach + "', tacgia='" + book.tacgia + "',namxuatban='" + book.namxuatban + "' WHERE id='"+book.id+"' ", connection);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
 
     }
 }

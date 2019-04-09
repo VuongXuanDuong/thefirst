@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLLER\form1controller.cs" />
+    <Compile Include="CONTROLLER\form2controller.cs" />
+    <Compile Include="MODEL\author.cs" />
     <Compile Include="MODEL\book.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -56,5 +56,13 @@ namespace demo.VIEW
             Form1_Load(sender, e);
             clear();
         }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            book b = new book(tbxid.Text, tbxtensach.Text, tbxtacgia.Text, tbxnamxuatban.Text);
+            f1.Update(b);
+            Form1_Load(sender, e);
+            clear();
+        }
     }
 }
