@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\news_model;
+use Illuminate\Support\Facades\Input;
 
 class new_controller extends Controller
 {
@@ -38,12 +39,12 @@ class new_controller extends Controller
        return redirect() -> Route('home');
    }
    public function search(Request $rq){
-       $search = $rq -> get('search');
-       $s = news_model::where('title','like','%'.$search.'%');
-       $s->title = $rq->title;
-       $s->body = $rq->body;
-       $s->save();
-       return view('Home')->with('the_news',$s);
+ //      $search = Input::get('search');
+       $search = $rq -> search;
+//       $s = news_model::all()->toArray();
+       $s = news_model::where('title','like',"%$search%")->get();
+       return view('Search')->with('s',$s);
    }
+
 
 }

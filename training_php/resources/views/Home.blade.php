@@ -6,19 +6,71 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Danh sách tin tức</title>
+    <style>
+        #customers*{
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr{background-color: #f2f2f2;}
+
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #83C75D;
+            color: white;
+        }
+        #form1 {
+            border-collapse: collapse;
+            margin-right: 500px;
+        }
+        #form1 input{
+            width: 200px;
+            height: 25px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: white;
+
+        }
+        #form1 button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 18px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #h11{
+            /*text-align: center;*/
+            font-size: 24px;
+        }
+        h1{
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
-    <?php
-    //var_dump($the_news)
-    ?>
-    <h1>Danh sách tin tức</h1>
-    <form action=" " method="get">
-        <input type="search" name="search">
-        <button type="submit">SEARCH</button>
+    <h1 id="h11">DANH SÁCH TIN TỨC</h1>
+    <h2>
+        <form action="{{Route('search')}}" method="GET" id="form1">
+           {{--  {{ csrf_field() }} --}}
+            <input type="text" name="search">
+            <button type="submit">SEARCH</button>
 
-    </form>
-    <table border="1">
+        </form>
+    </h2>
+    <table border="1" id="customers">
 
         <thead>
             <tr>
@@ -30,15 +82,15 @@
             </tr>
         </thead>
         <tbody>
-            <?php $stt=0;foreach ($the_news as $value):$stt++ ?>
+            @foreach($the_news as $index =>  $news)
             <tr>
-                <td>{{$stt}}</td>
-                <td>{{$value['title']}}</td>
-                <td>{{$value['body']}}</td>
-                <td><a href="edit/{{$value['id']}}">Edit</a> </td>
-                <td><a href="delete/{{$value['id']}}">Delete</a> </td>
+                <td>{{$index+1}}</td>
+                <td>{{$news['title']}}</td>
+                <td>{{$news['body']}}</td>
+                <td><a href="edit/{{$news['id']}}">Edit</a> </td>
+                <td><a href="delete/{{$news['id']}}">Delete</a> </td>
             </tr>
-            <?php endforeach;?>
+            @endforeach
         </tbody>
 
     </table>

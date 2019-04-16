@@ -12,7 +12,7 @@ class TheNews extends Migration
         Schema::create('the_news',function (Blueprint $table){
             $table->increments('id');
             $table->String('title');
-            $table->String('body');
+            $table->text('body');
         });
     }
 
