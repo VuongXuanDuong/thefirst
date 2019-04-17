@@ -13,7 +13,11 @@ class CategoryTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create("category_table",function(Blueprint $table){
+            $table->increments('id');
+            $table->String('name');
+
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class CategoryTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('category_table');
     }
 }

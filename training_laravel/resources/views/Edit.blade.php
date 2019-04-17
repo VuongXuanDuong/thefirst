@@ -47,11 +47,22 @@
         <input type="hidden" name="id" value="{{$s['id']}}">
         Title: <br>
         <input type="text" name="title" value="{{$s['title']}}"><br>
+        <select name="cate" id="123">
+            @foreach ($category as $index => $value)
+                <option value="{{ $value['id'] }}" {{ $value['id'] == $s['id_cate'] ? 'selected' : '' }}> {{ $value['name']}}</option>
+            @endforeach
+        </select><br>
         Body: <br>
 {{--        <input type="text" name="body" value="{{$s['body']}}"><br>--}}
         <textarea name="body"  rows="10" cols="30">{{$s['body']}}</textarea></br>
         <button type="submit" >OK</button><br>
+        <button type="button" onclick="f">bam di</button>
     </form>
+    <script>
+        function f() {
+            document.getElementById('123').value ="{{$s['id_cate']}}";
+        }
+    </script>
 
 </body>
 </html>

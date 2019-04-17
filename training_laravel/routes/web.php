@@ -18,4 +18,6 @@ Route::get('/edit/{id}','new_controller@edit');
 Route::post('/save_edit',['as'=>'save_edit','uses'=>'new_controller@save_edit']);
 Route::get('/delete/{id}','new_controller@delete');
 Route::get('/search',['as'=>'search','uses'=>'new_controller@search']);
+Route::get('/category/{id_cate}','new_controller@category');
+
 

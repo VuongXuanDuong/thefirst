@@ -48,11 +48,10 @@
             Title: <br>
             <input type="text" name="title" placeholder="Thêm tiêu đề"><br>
             Category:<br>
-            <select>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+            <select name="cate">
+                @foreach ($category as $index => $value)
+                    <option value="{{ $value['id'] }}"> {{ $value['name'] }}</option>
+                @endforeach
             </select><br>
             Body: <br>
 {{--        <input type="text" name="body"><br>--}}

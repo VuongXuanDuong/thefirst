@@ -61,39 +61,40 @@
 </head>
 <body>
 
-    <h1 id="h11">DANH SÁCH TIN TỨC</h1>
-    <h2>
-        <form action="{{Route('search')}}" method="GET" id="form1">
-           {{--  {{ csrf_field() }} --}}
-            <input type="text" name="search">
-            <button type="submit">SEARCH</button>
+<h1 id="h11">DANH SÁCH TIN TỨC</h1>
+<h2>
+    <form action=" " method="get" id="form1">
+        <button type="submit">SEARCH</button>
+        <input type="search" name="search" value="{{ isset($_GET['search']) ? $_GET['search'] : ''}}">
 
-        </form>
-    </h2>
-    <table border="1" id="customers">
+    </form>
+</h2>
+<table border="1" id="customers">
 
-        <thead>
-            <tr>
-                <th>STT</th>
-                <th>Title</th>
-                <th>Body</th>
-                <th>Delete</th>
-                <th>Edit</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($the_news as $index =>  $news)
-            <tr>
-                <td>{{$index+1}}</td>
-                <td>{{$news['title']}}</td>
-                <td>{{$news['body']}}</td>
-                <td><a href="edit/{{$news['id']}}">Edit</a> </td>
-                <td><a href="delete/{{$news['id']}}">Delete</a> </td>
-            </tr>
-            @endforeach
-        </tbody>
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Category</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php $stt=0;foreach ($s as $s):$stt++ ?>
+    <tr>
+        <td>{{$stt}}</td>
+        <td>{{$s->title}}</td>
+        <td>{{$s->body}}</td>
+        <td>{{$s['category']->name}}</td>
+        <td><a href="edit/{{$s['id']}}">Edit</a> </td>
+        <td><a href="delete/{{$s['id']}}">Delete</a> </td>
+    </tr>
+    <?php endforeach;?>
+    </tbody>
 
-    </table>
-    <a href="insert">Thêm Tin Mới</a>
+</table>
+<a href="http://traininglaravel.com:8888/">Home</a>
 </body>
-</html>
+</html><?php

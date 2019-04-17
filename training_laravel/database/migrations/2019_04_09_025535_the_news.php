@@ -13,9 +13,10 @@ class TheNews extends Migration
             $table->increments('id');
             $table->String('title');
             $table->text('body');
+            $table->integer('id_cate')->unsigned();
+//            $table->foreign('id_cate')->references('id')->on('category_table');
         });
     }
-
 
     public function down()
     {
