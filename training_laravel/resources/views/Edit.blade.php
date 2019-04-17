@@ -56,13 +56,7 @@
 {{--        <input type="text" name="body" value="{{$s['body']}}"><br>--}}
         <textarea name="body"  rows="10" cols="30">{{$s['body']}}</textarea></br>
         <button type="submit" >OK</button><br>
-        <button type="button" onclick="f">bam di</button>
     </form>
-    <script>
-        function f() {
-            document.getElementById('123').value ="{{$s['id_cate']}}";
-        }
-    </script>
 
 </body>
 </html>
